@@ -5,17 +5,17 @@ We recommend using this template to anyone who would like to make their function
 manipulation available in Stencila. You can think of this template as a part of Stencila API.
 
 1.  Please *do not fork this repository directly on GitHub.*
-    Instead, please use GitHub's importer following [the instructions below](#creating-a-repository).
+    Instead, please use GitHub's importer following [the instructions below](#creating-your-repository).
 
 2.  Please *do your work in your repository's `master` branch*,
     the documentation for your library will be 
     automatically published as a website by GitHub from the `doc` folder.
 
-3.  Once you are done, please also [let us know][email] 
+3.  Once you are done, please also [let us know][contact] 
 
 
 
-## Creating a Repository
+## Creating Your Repository
 
 1.  Log in to GitHub.
     (If you do not have an account, you can quickly create one for free.)
@@ -49,32 +49,34 @@ please [get in touch](#getting-and-giving-help).
 
 ## Using the template
 
+**Adding your libraries directly via GitHub interface**
+
 1.  Go into your newly-created repository,
     which will be at `https://github.com/your_username/lib-domain`.
     For example,
     if your username is `apawlik`,
     the repository's URL will be `https://github.com/apawlik/lib-genomics`.
 
-2.  
-6.  Alternatively,
-    if you are already familiar with Git,
-    you can clone the repository to your desktop,
-    write your functions and tests for them locally,
-    and push your changes back to the repository.
+2.  Have a look into the `function` subdirectory. It contains templates for
+functions in different languages (function.R, function,py, function.js and so on).
+Pick the template for the language your libraries are written in. Copy the contents of the template.
+
+**Adding your libraries in local repository**
+If you are already familiar with Git,
+you can clone the repository to your desktop: 
 
     ~~~
     git clone https://github.com/your_username/lib-domain
     ~~~
 
-    In order to view your changes once you are done editing,
-    you must push to your GitHub repository:
+write your functions and tests locally, and push your changes back to the repository you imported.
 
     ~~~
     git push origin master
     ~~~
-
-
-
+    
+ You can also create documentation automatically (in the `doc` folder) running the script on your machine.
+ Please see the details below.
 
 
 ## Generating documentation in the `doc` folder
@@ -92,3 +94,24 @@ or would like to suggest improvements,
 please [file an issue][issues]
 or [mail us][email].
 
+[contact]: mailto:hello@stenci.la
+[conduct]: https://github.com/stencila/policies/blob/master/CONDUCT.md
+[community-forum]: https://github.com/stencila/libcore/blob/master/docs/community.stenci.la
+[github]: http://github.com
+[importer]: https://github.com/new/import
+[issues]: https://help.github.com/articles/creating-an-issue/
+[how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
+[stencila-site]: http://stenci.la/
+[stencila-repo]: https://github.com/stencila/stencila
+[stencila-twitter]: https://twitter.com/stencila
+[stencila-gitter]: https://gitter.im/stencila/stencila/
+[markdown]: https://daringfireball.net/projects/markdown
+[libcore-contribute]: https://github.com/stencila/libcore/blob/master/CONTRIBUTING.md
+[libraries-contribute]: computation/functions.md#domain-specific-libraries
+[new-functions]: computation/functions.md#adding-new-functions
+[node-contribute]: https://github.com/stencila/node/CONTRIBUTING.md
+[desktop-contribute]: https://github.com/stencila/desktop/blob/master/CONTRIBUTING.md
+[cli-contribute]: https://github.com/stencila/cli/CONTRIBUTING.md
+[hub-contribute]: https://github.com/stencila/hub/CONTRIBUTING.md
+[cloud-contribute]: https://github.com/stencila/cloud/CONTRIBUTING.md
+[images-contribute]: https://github.com/stencila/images/CONTRIBUTING.md
