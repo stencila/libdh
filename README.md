@@ -11,8 +11,9 @@ manipulation available in Stencila. You can think of this template as a part of 
     the documentation for your library will be 
     automatically published as a website by GitHub from the `doc` folder.
 
-3.  Once you are done, please also [let us know][contact] 
-
+3.  Once you are done, please also [let us know][contact] and send us the link to your 
+library repository so that we can register it with Stencila and make it available to 
+researchers worldwide!
 
 
 ## Creating Your Repository
@@ -45,7 +46,7 @@ some people have had intermittent errors during the import process,
 possibly because of the network timing out.
 If you experience a problem, please re-try;
 if the problem persists,
-please [get in touch](#getting-and-giving-help).
+please [get in touch](#help).
 
 ## Using the template
 
@@ -83,7 +84,8 @@ you can clone the repository to your desktop:
  git clone https://github.com/your_username/lib-domain
 ```
 
-write your functions and tests locally, and push your changes back to the repository you imported.
+write your functions and tests locally (using the templates - please see the details above),
+and push your changes back to the repository you imported.
 
 ```
  git push origin master
@@ -95,17 +97,26 @@ write your functions and tests locally, and push your changes back to the reposi
 
 ## Generating documentation in the `doc` folder
 
+**Note**: In order to generate documentation, you will need to clone the repository on your local machine.
+
+If you used the Documentation for your functions is generated automatically. You need to, however,
+follow the templates provided and include documentation as per the examples in them.
+In order to generate the documentation, you will need to run the [script](generate_doc.py)
+which is included in the template. This will generate documentation files in the `doc` directory,
+in [Markdown][markdown] format. 
+
+Once you generated the documentation, push the changes back to your repository. 
+
 You can preview your changes in your GitHub pages which would be: `https://your_username.github.io/lib-domain`
 In the example above, this is `https://apawlik.github.io/lib-genomics`.
 
 
-## Getting and Giving Help
+## Help
 
-We are committed to offering a pleasant setup experience for our learners and organizers.
 If you find bugs in our instructions,
 or would like to suggest improvements,
 please [file an issue][issues]
-or [mail us][email].
+or [mail us][contact].
 
 [contact]: mailto:hello@stenci.la
 [conduct]: https://github.com/stencila/policies/blob/master/CONDUCT.md
