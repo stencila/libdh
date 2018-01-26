@@ -77,6 +77,7 @@ you will see the small text box at the top of the editor. Please provide a meani
 `test_pearson.R` or `test_extract_counts.py` (note that you need to provide the correct extension!).
 
 **Adding your libraries in local repository**
+
 If you are already familiar with Git,
 you can clone the repository to your desktop: 
 
