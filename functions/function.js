@@ -1,0 +1,2 @@
+/* Template for Javascript function
+*/
