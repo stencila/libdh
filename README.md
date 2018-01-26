@@ -58,15 +58,22 @@ please [get in touch](#getting-and-giving-help).
     the repository's URL will be `https://github.com/apawlik/lib-genomics`.
 
 2.  Have a look into the `function` subdirectory. It contains templates for
-functions in different languages (function.R, function,py, function.js and so on).
+functions in different languages (`function.R`, `function,py`, `function.js` and so on).
 Pick the template for the language your libraries are written in. Copy the contents of the template.
 
-3. In the top right click the button `Create new file`. This will open the editor on your screen.
+3. In the top right click the button "Create new file". This will open the editor on your screen.
 Paste in the contents you copied from the template in. You need to give the file you created a name -
 you will see the small text box at the top of the editor. Please provide a meaningful name such as:
 `pearson.R` or `extract_counts.py` (note that you need to provide the correct extension!).
 
-4.  
+4. To write tests for your function, go to the `function` subdirectory. It contains templates for
+function tests in different languages (`function-test.R`, `function-test,py`, `function-test.js` and so on).
+Pick the relevant template and copy its contents.
+
+5. In the top right click the button "Create new file". This will open the editor on your screen.
+Paste in the contents you copied from the test template in. You need to give the file you created a name -
+you will see the small text box at the top of the editor. Please provide a meaningful name such as:
+`test_pearson.R` or `test_extract_counts.py` (note that you need to provide the correct extension!).
 
 **Adding your libraries in local repository**
 If you are already familiar with Git,
