@@ -61,6 +61,13 @@ please [get in touch](#getting-and-giving-help).
 functions in different languages (function.R, function,py, function.js and so on).
 Pick the template for the language your libraries are written in. Copy the contents of the template.
 
+3. In the top right click the button `Create new file`. This will open the editor on your screen.
+Paste in the contents you copied from the template in. You need to give the file you created a name -
+you will see the small text box at the top of the editor. Please provide a meaningful name such as:
+`pearson.R` or `extract_counts.py` (note that you need to provide the correct extension!).
+
+4.  
+
 **Adding your libraries in local repository**
 If you are already familiar with Git,
 you can clone the repository to your desktop: 
