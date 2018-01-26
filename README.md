@@ -72,15 +72,15 @@ you will see the small text box at the top of the editor. Please provide a meani
 If you are already familiar with Git,
 you can clone the repository to your desktop: 
 
-    ~~~
-    git clone https://github.com/your_username/lib-domain
-    ~~~
+```
+ git clone https://github.com/your_username/lib-domain
+```
 
 write your functions and tests locally, and push your changes back to the repository you imported.
 
-    ~~~
-    git push origin master
-    ~~~
+```
+ git push origin master
+```
     
  You can also create documentation automatically (in the `doc` folder) running the script on your machine.
  Please see the details below.
@@ -88,9 +88,8 @@ write your functions and tests locally, and push your changes back to the reposi
 
 ## Generating documentation in the `doc` folder
 
-
-    go to the GitHub Pages URL for your workshop and preview your changes.
-    In the example above, this is `https://apawlik.github.io/lib-genomics`.
+You can preview your changes in your GitHub pages which would be: `https://your_username.github.io/lib-domain`
+In the example above, this is `https://apawlik.github.io/lib-genomics`.
 
 
 ## Getting and Giving Help
