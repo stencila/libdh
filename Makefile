@@ -1,13 +1,28 @@
-#!/bin/bash
-
-# Generates documentation for the functions included in the `functions` directory
-# Documentation is generated in Markdown format and placed in the `doc` directory
-# GitHub will automatically display this documentation in the repository GitHub pages
-
-# Requires R, Pandoc and rmarkdown
+all : test docs
 
 
-documentation:
-	 @for f in functions/*R; do fu="\"$$f"\"; Rscript --slave -e "library('rmarkdown');rmarkdown::render($$fu)"; done
-	 cd functions; rm *.html
-	 mv functions/*.md docs
+test-js:
+	@echo "$@ not yet implemented"
+
+test-py:
+	@echo "$@ not yet implemented"
+
+test-r:
+	Rscript -e "stencila::library_test()"
+
+test: test-js test-py test-r
+
+
+docs-js:
+	@echo "$@ not yet implemented"
+
+docs-py:
+	@echo "$@ not yet implemented"
+
+docs-r:
+	Rscript -e "stencila::library_document()"
+
+docs: docs-js docs-py docs-r
+	
+
+.PHONY: docs
