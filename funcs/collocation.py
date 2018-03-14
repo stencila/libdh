@@ -25,12 +25,15 @@ def collocation(cell_list, top = 10):
     dict = {} #initialize dictionary
 
     for line in input: #for each cell, split the string into words by space
-        line = line.split(". ")
+        line = line.split(". ") #split string into sentences
         for sentence in line:
-            sentence = sentence.translate(None, string.punctuation)
-            sentence = sentence.lower()
-            sentence = sentence.split(" ")
-            sentence = list(itertools.combinations(sentence, 2))
+            sentence = sentence.translate(None, string.punctuation) #replace all punctuation
+            sentence = sentence.lower() #convert sentence to lower case
+            sentence = sentence.split(" ") #split sentence by words
+            sentence = list(itertools.combinations(sentence, 2)) #find all 2 word combinations in sentence
+            
+            #create two versions of the word-pairing, first-second and second-first
+            #check for both phrases in the dictionary and update the value of the one that already exists if so
             for i in range(0, len(sentence)):
                 phrase = sentence[i][0] + "-" + sentence[i][1]
                 phrase1 = sentence[i][1] + "-" + sentence[i][0]
