@@ -25,7 +25,7 @@ def ngram(cell_list, top = 10):
         line = line.translate(None, string.punctuation)
         line = line.lower()
         line = line.split(" ")
-        for i in range(0, len(line)-2):
+        for i in range(0, len(line)-1):
             phrase = line[i] + " " + line[i+1]
             if phrase in dict:
                 dict[phrase] += 1
