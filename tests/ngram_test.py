@@ -17,9 +17,20 @@ def test_ngram_string():
 
 def test_ngram_array_string():
     """
-    ngram can be called with an array of strings (e.g. a column of cells containing strings)
+    ngram can be called with an array of strings (e.g. a column 
+    of cells containing strings)
     """
     grams = ngram(['Hello world.', 'Hello, world!', 'Hello... world?'])
     assert grams == [
         ('hello world', 3)
+    ]
+
+
+def test_ngram_single_word():
+    """
+    ngram will not detect single word phrases
+    """
+    grams = ngram(['Hello', 'Hello world!', 'world'])
+    assert grams == [
+        ('hello world', 1)
     ]
