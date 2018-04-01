@@ -8,7 +8,7 @@ import numpy as np
 def collocation(cell_list, top = 10):
     input = []
     """
-    N Gram
+    Collocation
 
     This function generates an n gram graphic based on the strings inputted
 
