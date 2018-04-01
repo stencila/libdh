@@ -1,14 +1,9 @@
-import operator
 import matplotlib.pyplot as plt
-import random
-import string
-import itertools
-import numpy as np
 
-def collocation(cell_list, word):
+def concordance(cell_list, word):
     input = []
     """
-    N Gram
+    Concordance
 
     This function generates an n gram graphic based on the strings inputted
 
