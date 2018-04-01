@@ -9,7 +9,7 @@ def concordance(cell_list, word):
 
     :param cell_list: Is either a string or an array containing strings
     :param word: Is the word that you want to search for
-    :return A matplotlib of the actual n gram
+    :return A matplotlib of the actual concordance
     """
 
     if isinstance(cell_list, str): #if the input is just a string, convert it to a list of one
