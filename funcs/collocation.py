@@ -14,7 +14,7 @@ def collocation(cell_list, top = 10):
 
     :param cell_list: Is either a string or an array containing strings
     :param top: Is the number of results you want returned (optional, defaults to 10)
-    :return A matplotlib of the actual n gram
+    :return A matplotlib of the actual collocation
     """
 
     if isinstance(cell_list, str): #if the input is just a string, convert it to a list of one
