@@ -22,8 +22,6 @@ def collocation(cell_list, word):
     else:
         input = cell_list
 
-    dict = {} #initialize dictionary
-
     for line in input: #for each cell, split input into sentences
         line = line.split(". ")
         y_val = 1 #initialize y axis values
