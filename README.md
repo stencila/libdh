@@ -1,6 +1,6 @@
 # `libdh`
 
-A library of [Stencila](http://stenci.la)-compatible functions for the Digital Humanities.
+A library of [Stencila](http://stenci.la)-compatible functions for the Digital Humanities. These functions are mostly text-based, charting and categorizing semantic information.
 
 
 ## Testing
