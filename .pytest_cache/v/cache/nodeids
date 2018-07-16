@@ -1,0 +1,15 @@
+[
+  "tests/collocation_test.py::test_collocation_string", 
+  "tests/collocation_test.py::test_collocation_single_words", 
+  "tests/collocation_test.py::test_collocation_string_array", 
+  "tests/concordance_test.py::test_concordance_string", 
+  "tests/concordance_test.py::test_concordance_array_string", 
+  "tests/entity_test.py::test_entity_recognition_array_places", 
+  "tests/entity_test.py::test_entity_recognition_array_people", 
+  "tests/ngram_test.py::test_ngram_string", 
+  "tests/ngram_test.py::test_ngram_array_string", 
+  "tests/ngram_test.py::test_ngram_single_word", 
+  "tests/word_cloud_test.py::test_word_cloud_one_word_per_cell", 
+  "tests/word_cloud_test.py::test_word_cloud_one_string", 
+  "tests/word_cloud_test.py::test_word_cloud_strings"
+]
