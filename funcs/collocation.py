@@ -31,7 +31,7 @@ def collocation(cell_list, top = 10):
             sentence = sentence.lower() #convert sentence to lower case
             sentence = sentence.split(" ") #split sentence by words
             sentence = list(itertools.combinations(sentence, 2)) #find all 2 word combinations in sentence
-            
+
             #create two versions of the word-pairing, first-second and second-first
             #check for both phrases in the dictionary and update the value of the one that already exists if so
             for i in range(0, len(sentence)):
@@ -44,8 +44,6 @@ def collocation(cell_list, top = 10):
                 else:
                     dict[phrase] = 1
     dict = sorted(dict.items(), key=operator.itemgetter(1), reverse=True) #sort dictionary from most to least frequent
-
-    max_freq = dict[0][1] #the max_frequency is the value of the first word
 
     words = []
     freq = []
