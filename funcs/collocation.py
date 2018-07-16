@@ -10,7 +10,7 @@ def collocation(cell_list, top = 10):
     """
     Collocation
 
-    This function generates an n gram graphic based on the strings inputted
+    This function generates a collocation graphic based on the strings inputted
 
     :param cell_list: Is either a string or an array containing strings
     :param top: Is the number of results you want returned (optional, defaults to 10)
@@ -43,19 +43,4 @@ def collocation(cell_list, top = 10):
                     dict[phrase1] += 1
                 else:
                     dict[phrase] = 1
-    dict = sorted(dict.items(), key=operator.itemgetter(1), reverse=True) #sort dictionary from most to least frequent
-
-    words = []
-    freq = []
-    for key, val in dict: #add words to matplotlib at random coordinates with font size relative to max frequency, rotate every other word
-        words.append(key)
-        y_pos = np.arange(len(words))
-        freq.append(val)
-        plt.bar(y_pos, freq, align='center')
-        plt.xticks(y_pos, words)
-        plt.ylabel('Frequency')
-        plt.title('Common Collocations')
-        top -= 1
-        if top == 0:
-            break
-    return plt
+    return sorted(dict.items(), key=operator.itemgetter(1), reverse=True) #sort dictionary from most to least frequent

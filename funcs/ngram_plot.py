@@ -4,7 +4,7 @@ import numpy as np
 from ngram import ngram
 
 
-def ngram_plot(values, top):
+def ngram_plot(values, top = 10):
     """
     Plot an ngram
 

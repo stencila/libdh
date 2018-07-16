@@ -2,7 +2,7 @@ import operator
 import string
 
 
-def ngram(cell_list, p =2, top = 10):
+def ngram(cell_list, p = 2, top = 10):
     input = []
     """
     N Gram
@@ -29,7 +29,9 @@ def ngram(cell_list, p =2, top = 10):
         for i in range(0, len(line)-(p-1)):
             phrase = ""
             for j in range(0, p):
-                phrase += line[i+j] + " "
+                phrase += line[i+j]
+                if j != p-1:
+                    phrase += " "
             if phrase in dict:
                 dict[phrase] += 1
             else:

@@ -1,36 +1,39 @@
-from funcs.ngram import collocation
-
+from funcs.collocation import collocation
 
 def test_collocation_string():
     """
-    collocation can be called with a string (e.g. a single cell containing a string)
+    word_cloud can be called with an array of single words (e.g. a column
+    of cells containing single words)
     """
-    grams = ngram('Hello world. Hello, world! Hello Alice and Bob.')
+    grams = collocation(['nick of time'])
     assert grams == [
-        ('hello world', 2),
-        ('and bob', 1),
-        ('hello alice', 1),
-        ('alice and', 1),
-        ('alice bob', 1)
+        ('of-time', 1),
+        ('nick-of', 1),
+        ('nick-time', 1)
+    ]
+def test_collocation_single_words():
+    """
+    word_cloud can be called with an array of single words (e.g. a column
+    of cells containing single words)
+    """
+    grams = collocation(['time', 'nick of time'])
+    assert grams == [
+        ('of-time', 1),
+        ('nick-of', 1),
+        ('nick-time', 1)
     ]
 
-
-def test_collocation_array_string():
+def test_collocation_string_array():
     """
-    collocation can be called with an array of strings (e.g. a column
-    of cells containing strings)
+    word_cloud can be called with an array of strings (e.g. a column
+    of cells containing strings that aren't limited to one word only)
     """
-    grams = ngram(['Hello world.', 'Hello, world!', 'Hello... world?'])
+    grams = collocation(['this is fun', 'nick of time'])
     assert grams == [
-        ('hello world', 3)
-    ]
-
-
-def test_collocation_single_word():
-    """
-    ngram will not detect single word phrases
-    """
-    grams = ngram(['Hello', 'Hello world!', 'world'])
-    assert grams == [
-        ('hello world', 1)
+        ('this-fun', 1),
+        ('this-is', 1),
+        ('nick-of', 1),
+        ('nick-time', 1),
+        ('of-time', 1),
+        ('is-fun', 1)
     ]

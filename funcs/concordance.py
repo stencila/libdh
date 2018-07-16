@@ -2,10 +2,11 @@ import matplotlib.pyplot as plt
 
 def concordance(cell_list, word):
     input = []
+    results = []
     """
     Concordance
 
-    This function generates an n gram graphic based on the strings inputted
+    This function generates a concordance graphic based on the strings inputted
 
     :param cell_list: Is either a string or an array containing strings
     :param word: Is the word that you want to search for
@@ -18,11 +19,9 @@ def concordance(cell_list, word):
         input = cell_list
 
     for line in input: #for each cell, split input into sentences
-        line = line.split(". ")
-        y_val = 1 #initialize y axis values
+        line = line.replace('!','.').replace('?','.').split(". ")
         for sentence in line: #plot any sentence that contains keyword in plot
+            sentence = sentence.replace(".","")
             if word in sentence.lower():
-                plt.text(0, y_val, sentence)
-                y_val -= .05
-    plt.axis('off') #removes axes so it's just an image
-    return plt
+                results.append(sentence)
+    return results
