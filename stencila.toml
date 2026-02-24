@@ -1,0 +1,12 @@
+[workspace]
+id = "wsmqdtn2cb0d"
+
+[site]
+exclude = [
+  ".git/**",
+  ".stencila/**",
+  "stencila.local.toml",
+  "__pycache__/**",
+  ".pytest_cache/**",
+]
+
